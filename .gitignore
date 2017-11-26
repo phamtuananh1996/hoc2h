@@ -1,0 +1,10 @@
+node_modules
+
+client/node_modules
+
+.env
+
+client/dist
+
+.vscode
+client/src/assets/.DS_Store

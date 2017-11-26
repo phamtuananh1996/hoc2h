@@ -1,0 +1,144 @@
+body {
+  font-weight: 400;
+  min-height: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+  font-size: 14px;
+  line-height: 1.3em;
+  color: #242729;
+  background: #f1f2f3;
+  min-width: 1075px;
+}
+a{
+  cursor: pointer;
+}
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+{
+  font-size: 12px;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+select:focus,
+select,
+.uneditable-input:focus {
+  border-color: rgba(63, 95, 240, 0.8);
+  outline: 0 none;
+  box-shadow: none;
+}
+
+.btn {
+  border: none;
+  color: white;
+  padding: 10px 28px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.success {
+  background-color: #4CAF50;
+}
+
+
+/* Green */
+
+.success:hover {
+  background-color: #46a049;
+}
+
+.info {
+  background-color: #2196F3;
+}
+
+
+/* Blue */
+
+.info:hover {
+  background: #0b7dda;
+}
+
+.warning {
+  background-color: #ff9800;
+}
+
+
+/* Orange */
+
+.warning:hover {
+  background: #e68a00;
+}
+
+.danger {
+  background-color: #f44336;
+}
+
+
+/* Red */
+
+.danger:hover {
+  background: #da190b;
+}
+
+.default {
+  background-color: #e7e7e7;
+  color: black;
+}
+
+
+/* Gray */
+
+.default:hover {
+  background: #ddd;
+}
+
+.card {
+  background: #fff;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.div-line {
+  border: solid 0.5px #8c8b8b;
+  margin: 20px 0;
+}
+
+.main-content {
+  margin: 100px 0;
+}

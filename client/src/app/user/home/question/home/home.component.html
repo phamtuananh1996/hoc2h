@@ -1,0 +1,29 @@
+<div class="container ">
+  <div class="row main-content">
+    <div class="col-12 question-content">
+      <div class="row">
+        <div class="col-9 question-index">
+           <div class="tab-filter">
+             <h1 class="h-top-question">Top Questions</h1>
+             <div class="tab">
+               <a href="#" [ngClass] ="{'active':tab == 1}" (click) = "setSelectedTab(1)" >new</a>
+               <a href="#" [ngClass] ="{'active':tab == 2}" (click) = "setSelectedTab(2)">hot</a>
+               <a href="#" [ngClass] ="{'active':tab == 3}" (click) = "setSelectedTab(3)">week</a>
+               <a href="#" [ngClass] ="{'active':tab == 4}" (click) = "setSelectedTab(4)">month</a>
+             </div>
+           </div>
+           <div class="question-list">
+            <list-questions></list-questions>
+           </div>
+        </div>
+        <div class="col-3 question-side-bar">
+            <div class="row justify-content-md-center">
+              <div class="col">
+                  <button class="btn btn-success add-question-btn" routerLink="/add-question">Add new question</button>
+              </div>
+            </div>
+        </div>
+     </div>
+    </div>
+  </div>
+</div>

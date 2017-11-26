@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row main-content">
+    <div class="col-9 box">
+      <h3 class="text-center ">Đăng Câu Hỏi</h3>
+      <div class="row add-question-form">
+        <div class="col-12">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Tiêu đề câu hỏi của bạn" [(ngModel)]="title">
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group">
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Danh mục</option>
+              <option>Kiến Thức THPT</option>
+              <option>Kiến Thức THCS</option>
+              <option>Công Nghệ Thông Tin</option>
+              <option>Ngoại Ngữ</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-12">
+            <ckeditor [(ngModel)]="question_body"></ckeditor>            
+        </div>
+       
+        <div class="col-12" style="margin-top:20px;">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Gắn thẻ tags" [(ngModel)]="tags">
+          </div>
+        </div>
+        <div class="col-12">
+            <button class="btn btn-info" (click)="postQuestion()">Đăng lên</button>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+</div>

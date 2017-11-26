@@ -1,0 +1,56 @@
+<div class="qlist-wrapper">
+  <div class="question-mini-list">
+    <div>
+      <div class="question-summary">
+        <div class="status">
+          <div class="votes">
+            <div class="counts">
+              <span title="12 votes">
+                {{votes_count}}
+              </span>
+              <div>votes</div>
+            </div>
+          </div>
+          <div class="answers" [ngClass]="{'answered':answers_count > 0}">
+            <div class="counts">
+              <span title="12 answers">
+                {{answers_count}}
+              </span>
+              <div>answers</div>
+            </div>
+          </div>
+          <div class="views">
+            <div class="counts">
+              <span title="122 views">
+                {{views_count}}
+              </span>
+              <div>views</div>
+            </div>
+          </div>
+        </div>
+        <div class="summary">
+          <h3>
+            <a class="question-hyperlink" href="#" routerLink="/question/detail/{{1}}">
+              Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis?
+            </a>
+          </h3>
+          <div class="tags-list">
+            <a class="tag-post">ios</a>
+            <a class="tag-post">development</a>
+            <a class="tag-post">ios application</a>
+          </div>
+          <div class="started">
+            <div class="started-link">
+              Asked by 
+              <a class="asker-name" href="#">
+                Aries92
+              </a>
+              at
+              <span class="created-time">12h00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

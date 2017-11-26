@@ -1,0 +1,12 @@
+
+.login-box {margin-top: 120px;}
+.panel-heading {
+    padding: 10px;
+    background:#ecf0f1;
+}
+.forgot-password-text{
+    float:right; font-size: 80%; position: relative;margin-top: -20px;
+}
+.panel-body {padding: 20px; margin-bottom: 10px;}
+
+.dont-have-account {float: right; font-size: 13px;}

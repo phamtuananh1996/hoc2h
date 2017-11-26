@@ -1,0 +1,35 @@
+<div class="container bg-white" style="margin-top: 50px">
+  <div class="row mt-3"></div>
+  <div class="row mt-3">
+    <div class="col-md-10 offset-1 border border-info">
+      <div class="text-center ">
+        <h4>Bài thi</h4>
+      </div>
+      <div>
+        <h5 class="font-weight-bold text-justify text-danger">{{test?.title}}</h5>
+        <h6><span class="font-weight-bold">Thể loại/Danh mục : </span> {{test?.category[0]?.name}}</h6>
+        <h6><span class="font-weight-bold">Dạng đề : </span> Trắc nghiệm</h6>
+        <h6><span class="font-weight-bold">Thời gian : </span> {{test?.times}}</h6>
+        <h6><span class="font-weight-bold">Độ khó : </span>
+        <span  [ngSwitch]="test?.level">
+          <span *ngSwitchCase="1">Dễ</span>
+          <span *ngSwitchCase="2">Trung bình</span>
+          <span *ngSwitchCase="3">Khó</span>
+        </span></h6>
+        <h6><span class="font-weight-bold">Số người đã làm : </span> {{test?.user_test.length}}</h6>
+        <h6><span class="font-weight-bold">Lượt đánh giá : </span> {{test?.user_rate.length}}</h6>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-3 mb-3">
+      <button class="btn btn-success col-md-2 offset-md-5"><i class="fa fa-caret-square-o-right" aria-hidden="true"></i> Vào làm bài </button>
+  </div>
+  <div class="row mt-3">
+
+  </div>
+  <div class="row mt-3">
+
+  </div>
+</div>

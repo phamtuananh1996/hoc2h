@@ -1,0 +1,10 @@
+.navbar {
+    padding: 0 1.5rem;
+}
+
+li.nav-item {padding: 5px 0;}
+li > a.nav-link {color:white;}
+li.nav-item:hover {
+    background: rgb(255, 255, 255);
+}
+li.nav-item:hover > a.nav-link {color: black}

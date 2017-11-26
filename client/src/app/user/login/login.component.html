@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="row justify-content-center login-box ">
+    <div class="col-6">
+      <div *ngIf="status === 422">
+        <div class="alert alert-danger" role="alert"  *ngFor="let error of errors">
+            <p>{{error.msg}}</p>
+        </div>
+      </div>
+      <div *ngIf="status === 401">
+          <div class="alert alert-danger" role="alert" >
+              <p>{{errors}}</p>
+          </div>
+      </div>
+      <div class="panel card">
+        <div class="panel-heading">
+          <div class="panel-title">Đăng Nhập<param name="" value=""></div>
+          <div class="forgot-password-text">
+            <a href="#">Quên mật khẩu?</a>
+          </div>
+        </div>
+        <div class="panel-body">
+          <small class="form-text error-text">Error text here..!</small>
+          <div class="form-group">
+            <input type="text" class="form-control" [(ngModel)]="username" placeholder="Email hoặc tên đăng nhập" (keyup.enter)="login()">
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" placeholder="Mật khẩu" [(ngModel)]="password" (keyup.enter)="login()">
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input"><small>Ghi nhớ đăng nhập.</small>
+            </label>
+          </div>
+          <button class="btn btn-success" (click)="login()">Đăng nhập</button>
+          <button  class="btn btn-info" (click)="loginFacebook()">Đăng nhập bằng facebook</button>
+
+          <br>
+          <div class="div-line"></div>
+          <div class="dont-have-account">
+            Chưa có tài khoản!
+            <a href="#" routerLink="/register">Đăng ký ngay</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

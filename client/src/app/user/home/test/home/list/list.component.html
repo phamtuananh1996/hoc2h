@@ -1,0 +1,54 @@
+<div class="qlist-wrapper" *ngFor="let test of tests">
+  <div class="question-mini-list">
+    <div>
+      <div class="question-summary">
+        <div class="status">
+          <div class="votes">
+            <div class="counts">
+              <span title="12 votes">
+                {{test?.user_test?.length}}
+              </span>
+              <div>testings</div>
+            </div>
+          </div>
+          <div class="answers" [ngClass]="{'answered':answers_count > 0}">
+            <div class="counts">
+              <span title="12 answers">
+                {{test?.comments?.length}}
+              </span>
+              <div>comments</div>
+            </div>
+          </div>
+          <div class="views">
+            <div class="counts">
+              <span title="122 views">
+                {{test?.views}}
+              </span>
+              <div>views</div>
+            </div>
+          </div>
+        </div>
+        <div class="summary">
+          <h3>
+            <a class="question-hyperlink" href="#" [routerLink]="['/test/detail/', test?._id]">
+              {{test?.title}} {{test?.title}}
+            </a>
+          </h3>
+          <div class="tags-list">
+            <a class="tag-post">{{test?.category[0]?.name}}</a>
+          </div>
+          <div class="started">
+            <div class="started-link">
+              Create by
+              <a class="asker-name" href="#">
+                {{test?.user[0]?.username}}
+              </a>
+              at
+              <span class="created-time">{{diffTime(test?.created_at)}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
